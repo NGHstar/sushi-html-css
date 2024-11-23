@@ -1,0 +1,144 @@
+.trending {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.trending__discover {
+  position: absolute;
+  top: 44%;
+  left: 44%;
+  z-index: 122;
+  width: 160px;
+  height: 160px;
+  background-color: var(--secondary-color);
+  border-radius: 100%;
+}
+
+.trending__discover p {
+  font-size: 1.8rem;
+  color: var(--color-white);
+  font-family: var(--dana-medium);
+}
+
+.trending-sushi,
+.trending-drinks {
+  width: 100%;
+  min-height: 640px;
+  display: flex;
+  flex-direction: row;
+}
+
+.trending__content {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.trending__content-wrapper {
+  padding: 32px 64px;
+}
+
+.trending__list {
+  margin-top: 32px;
+  list-style: none;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.trending__list li {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  gap: 20px;
+  min-width: 210px;
+}
+
+.trending__icon {
+  width: 24px;
+  height: 24px;
+  background-color: var(--primary-color);
+  border-radius: 100%;
+}
+
+.trending__icon img {
+  width: 50%;
+  height: 50%;
+  object-fit: contain;
+}
+
+.trending__list p {
+  flex: 1;
+  font-size: 1.6rem;
+  font-family: var(--dana-medium);
+  color: var(--secondary-color);
+}
+
+.trending__image {
+  flex: 1;
+  position: relative;
+  background-color: var(--color-white);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+.trending-sushi .trending__image {
+  background-image: url("../../assets/images/japanese_sushi.png");
+}
+
+.trending-sushi .trending__drink {
+  background-image: url("../../assets/images/japanese_drinks.png");
+}
+
+.trending__image img {
+  width: 254px;
+  height: 260px;
+  object-fit: contain;
+}
+
+/* Arrows */
+.trending__arrow {
+  position: absolute;
+  z-index: 1;
+}
+
+.trending__arrow img {
+  object-fit: contain;
+}
+
+.trending__arrow-left {
+  left: -3.5px;
+  bottom: 12%;
+}
+
+.trending__arrow-left img,
+.trending__arrow-top img {
+  width: auto;
+  height: 100%;
+}
+
+.trending__arrow-top {
+  top: -3px;
+  right: 9%;
+}
+
+.trending__arrow-bottom {
+  bottom: -4.5px;
+  left: 12%;
+
+}
+
+.trending__arrow-bottom img,
+.trending__arrow-right img {
+  width: 100%;
+  height: auto;
+}
+
+.trending__arrow-right {
+  right: -3px;
+  top: 12%;
+}

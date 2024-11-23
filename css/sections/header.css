@@ -1,0 +1,63 @@
+.header__nav {
+  display: flex;
+  overflow: hidden;
+}
+
+.header__logo {
+  flex: 1;
+  display: flex;
+  position: relative;
+  padding-right: 2rem;
+  padding-top: 1.5rem;
+  padding-bottom: 2rem;
+}
+
+.header__logo-overlay {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  background-color: var(--primary-color);
+}
+
+.header__logo h4 {
+  font-family: danablack;
+  text-transform: uppercase;
+  font-size: 3rem;
+  padding-right: 2rem;
+  font-weight: 100;
+  color: white;
+  z-index: 1;
+}
+
+.header__menu,
+.header__menu-mobile {
+  padding: 0 1rem;
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 4rem;
+  list-style: none;
+}
+
+.header__menu li {
+  font-weight: 500;
+  font-size: 3rem;
+  line-height: 20px;
+  text-transform: uppercase;
+  font-family: var(--dana-medium);
+  color: var(--secondary-color);
+  cursor: pointer;
+}
+
+.header__menu li img {
+  width: 24px;
+  height: 24px;
+  object-fit: contain;
+}
+
+.header__menu-mobile {
+  display: none;
+  gap: 20px;
+  position: relative;
+}
